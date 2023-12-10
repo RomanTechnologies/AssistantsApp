@@ -1,13 +1,4 @@
-import 'package:flutter/flutter.dart';
-
-class HomeView extends StatelessWidget {
-  HomeView({Key?key}) : super(key: key);
-
-  @override  Widget build(BuildContext context) {
-    return Container(
-      child: Center(
-        child: Text('Home View'),
-      ),
-    );
-  }
-}
+import 'package:flutter/flutter.dart';\nimport 'package:flutter_services/flutter_services.dart';\n\nclass HomeView extends StatefulWidget {
+  HomeView({Key?key}) : super(key: key);\n\n  @override\n  _HomeViewState createState() => _HomeViewState();\n}\n\nclass _HomeViewState extends State<HomeView> {
+  String inputText = '';\n\n  @override\n  Widget build(BuildContext context) {\n    return Scaffold(
+      appBar: AppBar(\n        title: Text('Assistants App'),\n      ),\n      body: Center(\n        child: Column(\n          mainAxisSize: MainAxisSize.max,\n          children: [\n            Padding(\n\t              padding: EdgeInsets.all(10),\n              child: TextField(\n                controller: TextEditingController(text: inputText),\n                onChanged: (val) {\n                  setState(() => inputText = val);\n                },\n              )\n            ),\n            // Add display area here for function chain\n          ],\n        ),\n      ),\n    );\n  }\n}
