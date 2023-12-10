@@ -1,5 +1,3 @@
-import 'package:flutter/flutter.dart';
-
-class ApiController {
-  // Add functionality here to interact with the OpenAI Assistants API
-}
+import 'package:flutter/flutter.dart';\nimport 'dart:async';\n\nclass ApiController {
+  future<List<String>> getFunctionChain(String userInput) async {
+    // This is a simplified example for communication with the OpenAI API.\n    // You will need to replace this with the actual code to make HTTP requests to the OpenAI Assistants API.\n    // The below code is just a placeholder for demonstration purposes.\n    return ['Function1', 'Function2', 'Function3';\n  }\n}
