@@ -1,1 +1,2 @@
-import 'package:flutter/flutter.dart';\n\nclass FunctionChain {\n  String name;\n  List<FunctionChainItem> chainItems;\n\n  FunctionChain({this.name, this.chainItems});\n}\n\nclass FunctionChainItem {\n  String functionName;\n  map<String, int> params;\n  FunctionChainItem({this.functionName, this.params});\n}
+import 'package:flutter/flutter.dart';\n\nclass FunctionChain {\n  String name;\n  List<FunctionChainItem> chainItems;\n\n  FunctionChain({this.name, this.chainItems});\n}\n\nclass FunctionChainItem {\n  String functionName;\n  Map<String, int> params;\n  String description;
+  FunctionChainItem({this.functionName, this.params, this.description});\n}
